@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html ng-app="app3">
+<head>
+    <title></title>
+    <script src="Scripts/angular.js"></script>
+    <script src="App/main.js"></script>
+    <script src="App/Controllers/AlunoController.js"></script>
+    <link href="www/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="www/css/framework7.ios.colors.min.css" rel="stylesheet" />
+    <link href="www/css/framework7.ios.min.css" rel="stylesheet" />
+    <script src="www/scripts/framework7.min.js"></script>
+</head>
+<body ng-controller="AlunoController">
+    <div class="login-screen modal-in">
+        <div class="view">
+            <div class="page">
+                <div class="page-content login-screen-content">
+                    <div class="login-screen-title">Login</div>
+                    <form>
+                        <div class="list-block">
+                            <ul>
+                                <li class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label"><strong>Digite seu RA:</strong></div>
+                                        <div class="item-input">
+                                            <input type="text" name="RA" ng-model="aluno.ra" placeholder="Digite seu RA" style="border: 1px solid #8F8F97; padding:5px;">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list-block">
+                            <ul>
+                                <li><a href="#" class="button button-big" ng-click="validar">Entrar</a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
